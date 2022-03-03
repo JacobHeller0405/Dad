@@ -14,6 +14,10 @@ button {
     width: 50%;
     font-size: 20px;
 }
+button:hover {
+  cursor: pointer;
+  background-color: #38d1d1;
+}
 #try {
   color: grey;
 }
