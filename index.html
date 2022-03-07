@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Very Funny Cool Awesome and Very Funny Cool Dad Jokes</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <b><p>Dad, I'm <span id="name"></span>!</p></b>
-    <p id="joke"><span id="answer"></span></p>
-    <button id="punchLine">Very Funny Joke</button>
-    <p id="try">(Try refreshing the page)</p>
-    <script src="dad.js" charset="utf-8"></script>
-  </body>
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <title>Very Funny Cool Awesome and Very Funny Cool Dad Jokes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class='everything'>
+    <b>
+      <p id="beginning">Dad, I'm <span id="name"></span>!</p>
+    </b>
+    <p id="joke"></p>
+    <div id="buttons" class="text-center">
+      <button id="punchLine">See joke</button>
+      <button id="reRoll">Reroll funny</button>
+    </div>
+    </div>
+  <script src="dad.js" charset="utf-8"></script>
+</body>
+
 </html>
