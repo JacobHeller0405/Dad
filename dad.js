@@ -20,8 +20,15 @@ reRoll.onclick = function() {
 	if (document.getElementById('joke').textContent !== '') {
 		document.getElementById('joke').textContent = "Hi " + name + ' Im dad!';
 	}
+}
 
 	punchLine.onclick = function() {
-	  document.getElementById('joke').textContent = 'Hi ' + name + ' Im dad!';
+		var name = document.getElementById('name').textContent;
+    if (document.getElementById('joke').textContent == '') {
+		document.getElementById('joke').textContent = 'Hi ' + name + ' Im dad!';
+		document.getElementById('punchLine').textContent = 'Hide joke';
+	} else if (document.getElementById('joke').textContent !== '') {
+		document.getElementById('joke').textContent = '';
+		document.getElementById('punchLine').textContent = 'See joke';
 	}
-}
+	}
